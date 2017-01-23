@@ -68,13 +68,7 @@ public class GameScreen extends BaseScreen{
 
         world.setContactListener(new GameContactListener());
 
-
-
-
-
     }
-
-
 
     @Override
     public void show() {
@@ -96,6 +90,13 @@ public class GameScreen extends BaseScreen{
         floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  160, 5, 2));
         floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  240, 8, 2));
         floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  250, 5, 3));
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  265, 10, 2));
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  305, 8, 2));
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  330, 5, 2));
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  380, 8, 2));
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  390, 5, 3));
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  405, 10, 2));
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture,  440, 5, 2));
         spikeList.add(new SpikeEntity(spikeTexture, world, 8, 1));
         spikeList.add(new SpikeEntity(spikeTexture, world, 23, 2));
         spikeList.add(new SpikeEntity(spikeTexture, world, 35, 1));
@@ -110,6 +111,7 @@ public class GameScreen extends BaseScreen{
         spikeList.add(new SpikeEntity(spikeTexture, world, 315, 1));
         spikeList.add(new SpikeEntity(spikeTexture, world, 567, 2));
         spikeList.add(new SpikeEntity(spikeTexture, world, 675, 1));
+        spikeList.add(new SpikeEntity(spikeTexture, world, 698, 1));
 
 
         for (FloorEntity floor : floorList)
